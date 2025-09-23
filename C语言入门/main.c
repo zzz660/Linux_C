@@ -1,16 +1,14 @@
-#include<stdio.h>
+#include <stdio.h>
 
 void foo(void){
-    int i = 0;
-    {
-        int i = 1;
-        int j = 2;
-        printf("i = %d, j = %d\n", i, j);
-    }
-    printf("i = %d\n", i);
+    int i;
+    printf("%d\n", i);
+    i = 777;
 }
 
-int main(void){
-    printf(type(foo));
+int main(){
+    foo();
+    printf("Hello word.\n");
+    foo();
     return 0;
 }
